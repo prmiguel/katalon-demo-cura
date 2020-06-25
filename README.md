@@ -9,3 +9,10 @@
 [DateTime Picker](http://www.malot.fr/bootstrap-datetimepicker/index.php) is a Bootstrap form component to handle date and time data.
 
 [Underscore.php](http://brianhaveri.github.io/Underscore.php/)  is a PHP port of the popular Underscore.js library. In addition to porting Underscore's functionality, Underscore.php includes matching unit tests. Underscore.php requires PHP 5.3 or greater.
+
+
+```
+docker rm -f cura_server
+docker build -t cura .
+docker run -d -p 80:80 -e "SITE_URL=https://katalon-demo-cura.herokuapp.com/" --name cura_server cura
+```
